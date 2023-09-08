@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <p class="logo">Recipe Finder</p>
+      <form class="js-form" id="search-form">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Enter recipe name"
+          autocomplete="on"
+        />
+        <button class="js-submit" type="submit">Search</button>
+      </form>
+    </nav>
+    <div class="content">
+      <img src="/image/food.jpg" alt="" />
+    </div>
+    <form class="js-form2" id="recipe-form">
+      <input type="text" id="recipe-name" placeholder="Recipe Name" />
+      <input
+        class="js-ingre"
+        type="text"
+        id="recipe-ingredients"
+        placeholder="Ingredients (comma-separated)"
+      />
+      <textarea id="recipe-instructions" placeholder="Instructions"></textarea>
+      <button class="js-submit" type="submit">Add Recipe</button>
+    </form>
+
+    <ul class="js-list" id="recipe-list" class="recipe-list"></ul>
+
+    <script src="/recipe.js"></script>
+  </body>
+</html>
